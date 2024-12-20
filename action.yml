@@ -1,6 +1,6 @@
 name: 'Signtool Code Sign PFX Cert'
 description: 'Sign files with with a pfx certificate using signtool'
-author: 'Gabriel Acosta'
+author: 'Ajanth Thangavelu'
 branding:
   icon: 'code'
   color: 'gray-dark'
