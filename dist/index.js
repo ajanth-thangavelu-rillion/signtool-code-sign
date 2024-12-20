@@ -183,7 +183,7 @@ function trySign(file) {
             yield wait(i);
             if (supportedFileExt.includes(ext)) {
                 try {
-                    let command = `"${signtool}" sign /sha1 "${coreSha1}" /tr ${coreTimestampServer} /td SHA256 /fd SHA256"`;
+                    let command = `"${signtool}" sign /sha1 "${coreSha1}" /tr ${coreTimestampServer} /td SHA256 /fd SHA256`;
                     if (coreCertDesc !== '')
                         command = command.concat(` /d "${coreCertDesc}"`);
                     command = command.concat(` "${file}"`);
