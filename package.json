@@ -25,7 +25,8 @@
   "author": "Gabriel Acosta",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.11.1"
+    "@actions/core": "^1.11.1",
+    "eslint": "^5.0.0"
   },
   "devDependencies": {
    "@types/jest": "^27.0.2",
