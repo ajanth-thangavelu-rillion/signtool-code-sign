@@ -127,7 +127,7 @@ async function trySign(file: string): Promise<boolean> {
 		await wait(i)
 		if (supportedFileExt.includes(ext)) {
 			try {
-				let command = `"${signtool}" sign /sm /t ${coreTimestampServer} /sha1 "${coreSha1}"`
+				let command = `"${signtool}" sign /sha1 "${coreSha1} /tr ${coreTimestampServer} /td SHA256 /fd SHA256 "`
 				if (coreCertDesc !== '')
 					command = command.concat(` /d "${coreCertDesc}"`)
 
