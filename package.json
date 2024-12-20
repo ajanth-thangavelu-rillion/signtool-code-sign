@@ -5,6 +5,7 @@
   "description": "Sign files with signtool.exe",
   "main": "lib/main.js",
   "scripts": {
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider",
     "build": "tsc",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
