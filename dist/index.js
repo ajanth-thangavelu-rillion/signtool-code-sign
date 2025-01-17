@@ -76,7 +76,7 @@ const util_1 = __importDefault(__nccwpck_require__(669));
 const execAsync = util_1.default.promisify(child_process_1.exec);
 // Internal paths
 const certPath = `${process_1.env['TEMP']}\\certificate.pfx`;
-const signtool = 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/signtool.exe';
+const signtool = 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/signtool.exe';
 // Inputs
 const coreFolder = core.getInput('folder');
 const coreRecursive = core.getInput('recursive') === 'true';
